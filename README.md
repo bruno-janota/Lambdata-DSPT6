@@ -17,8 +17,7 @@ print(enlarge(x))
 ```
 
 ```py
-from my_lambdata.ds_utilities import enlarge
+from my_lambdata.ds_utilities import train_validation_test_split
 
-x = 11
-print(enlarge(x))
+X_train, X_val, X_test, y_train, y_val, y_test = train_validation_test_split(X, y)
 ```
