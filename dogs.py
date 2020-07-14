@@ -15,7 +15,8 @@ class Dog():
 
 
 class Beagle(Dog):
-    pass
+    def barks_alot(self, barker)
+
 
 if __name__ == "__main__":
     
