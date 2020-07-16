@@ -17,14 +17,10 @@ class MyDataSplitter():
     This class implements a 3-way data split and outputs summary metrics. 
     '''
 
-    def __init__(self, df, features, target):
+    def __init__(self, df):
         self.df = df
-        self.features = features
-        self.target = target
-        self.X = df[features]
-        self.y = df[target]
 
-    def train_validation_test_split(self,
+    def train_validation_test_split(self, features, target,
                                     train_size=0.7, val_size=0.1,
                                     test_size=0.2, random_state=None,
                                     shuffle=True):

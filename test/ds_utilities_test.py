@@ -2,6 +2,7 @@ import unittest
 import pandas as pd
 from my_lambdata.ds_utilities import enlarge, MyDataSplitter
 
+
 class TestDsUtilities(unittest.TestCase):
 
     def test_enlarge(self):
@@ -20,7 +21,7 @@ class TestDsUtilities(unittest.TestCase):
         expected_shape = current_shape + 3
 
         # Create MyDataSplitter object
-        splitter = MyDataSplitter(df, features=['age', 'favorite_color', 'birth_date'], target='grade')
+        splitter = MyDataSplitter(df)
         converted_df = splitter.date_divider(date_col)
 
         self.assertEqual(expected_shape, converted_df.shape[1])
